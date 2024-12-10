@@ -105,6 +105,7 @@ section {
 
         & .submit,
         & .reset {
+            all:unset;
             color: white;
             background-color: #0d48eb;
             margin: 0px 20px;
@@ -113,6 +114,7 @@ section {
             transition: 0.7s ease;
             border-radius: 22px;
             border: 1px solid #0d48eb;
+            text-align: center;
         }
 
         & .submit:hover,

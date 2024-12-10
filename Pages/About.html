@@ -11,15 +11,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link rel="stylesheet" href="../CSSs/Global.css">
     <link rel="stylesheet" href="../CSSs/Header.css">
-    <link rel="stylesheet" href="../CSSs/ConUs.css"/>
+    <link rel="stylesheet" href="../CSSs/About.css">
     <link rel="stylesheet" href="../CSSs/Footer.css">
 </head>
 <body class = "root">
     <header class = "flex">
         <div class = "logo">
-            <h1><a href="../index.html">My Profile</a></h1>
+            <h1><a href="#">My Profile</a></h1>
         </div>
         <nav>
+
+            <!-- <input type="checkbox" name="check" id="check">
+            <label for="check">
+                <i class = "fa fa-bars"></i>
+            </label> -->
+
             <a href="../index.html">Home</a>
             <a href="certificates.html">Certificates</a>
             <a href="Projects.html">Projects</a>
@@ -28,51 +34,31 @@
             <a href="Registration.html">Registration</a>
             <a href="About.html">AboutUs</a>
             <a href="log.html">Login</a>
+            
         </nav>
     </header>
     <section>
         <div class="contact-container">
-            <h1>Contact Us</h1>
-            <p>Any questions or remarks? just write us a message!   </p>
-            <form method="post">
-                <div class="contact-info">
-                    <div class = "email">
-                        <label for="email">Email </label>
-                        <br>
-                        <input required class = "in-email" type="email" name="email" id="email" size="30" placeholder="  Enter a valide email address" >
-                    </div>
-                    <div class = "name">
-                        <label for="name">Name </label>
-                        <br>
-                        <input required class ="in-name" type="text" name="name" id="name" size="30" placeholder="  Enter your Name">
-                    </div>
+            <div class = "info">
+                <h1>About Me</h1>
+                <p>
+                    Hello! My name is <strong>Islam Mustafa</strong>. I am a designer and a postgraduate student currently pursuing a Diploma in Computer Science. 
+                    With a keen interest in web design and development, I strive to create functional and visually appealing websites that leave a lasting impression.
+                </p>
+
+                <p>
+                    My portfolio showcases my creativity, attention to detail, and technical skills. Feel free to explore my projects and get to know more about my journey in the field of computer science and design.
+                </p>
+                <div class="social-icons">
+                    <a class ="linkedin" href="https://linkedin.com/in/islam-mustafa-755a49235" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class ="youtube" href="https://www.youtube.com/@islammustafa9245" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a class ="github" href="https://github.com/islamm88" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
-                <div calss ="Cont-button">
-                    <input class = "submit" type="submit" name="submit" id="submit" value="Submit">
-                </div>
-            </form>
-        </div> 
-        <div class = "inf">
-            <div class = "inf-con">
-                <div class = "call-con">
-                    <div  class = "calling">
-                        <i class="fa-solid fa-phone"></i>
-                    </div>
-                    <p class ="p-fir">Mobile Numbers</p>
-                    <p class ="p-sec">01006321177</p>
-                    <p class ="p-las">01234517100</p>
-                </div>
-                <div class = "call-con">
-                    <div class = "loc">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <p class ="p-fir">OUR OFFICE LOCATION</p>
-                    <p class ="p-sec">Egypt</p>
-                    <p class ="p-las">Alexandria</p>
-                </div>
-                
             </div>
-        </div>
+            <div class="photo">
+                <img src="../Imgs/myphoto.png">
+            </div>
+        </div> 
     </section>
     <footer>
         <div class="footer-content">
@@ -93,5 +79,5 @@
             </div>
         </div>
     </footer>
-</body>
+    </body>
 </html>

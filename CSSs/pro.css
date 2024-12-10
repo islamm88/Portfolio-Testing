@@ -6,6 +6,8 @@ section {
     flex-direction: column;
     align-items: center;
 
+ 
+
     & h2 {
         margin: 20px 0px;
         font-size: 2.8em;
@@ -36,38 +38,52 @@ section {
         align-items: center;
         padding: 10px;
 
-        & .Image {
-            /* border: 1px solid var(--num5-color); */
-            border-radius: 20px;
-            height: 200px;
-            width: 80%;
-            margin: 20px 0px;
+        & .cont
+        {
+            border: 1px solid var(--num1-color);
+            border-radius: 10px;
+            margin: 15px;
+            padding: 10px;
             display: flex;
-            flex-direction: row;
-         
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
-            & .img 
-             {
-                margin: 15px;
+            & .Image {
+                /* border: 1px solid var(--num5-color); */
                 border-radius: 20px;
-                width: 50%;
-                /* background-color: var(--num4-color); */
-                transition: 0.7s ease;
-                
-
-                & img
-                {
-                    width: 100%;
-                    height: 100%;
+                height: 200px;
+                width: 80%;
+                margin: 20px 0px;
+                display: flex;
+                flex-direction: row;
+             
+    
+                & .img 
+                 {
+                    margin: 15px;
+                    border-radius: 20px;
+                    width: 50%;
+                    /* background-color: var(--num4-color); */
+                    transition: 0.7s ease;
+                    
+    
+                    & img
+                    {
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
-            }
+    
+                & .img:hover
+                {
+                    transform: scale(2.05);
+                    background-color: white;
+                    color: var(--num4-color);
+                }
+        }
 
-            & .img:hover
-            {
-                transform: scale(2.05);
-                background-color: white;
-                color: var(--num4-color);
-            }
+       
         }
 
         & article {

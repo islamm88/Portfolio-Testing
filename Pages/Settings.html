@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../CSSs/Header.css">
     <link rel="stylesheet" href="../CSSs/set.css"/>
     <link rel="stylesheet" href="../CSSs/Footer.css">
+
+
 </head>
 <body class = "root">
     <header class = "flex">
@@ -26,6 +28,7 @@
             <a href="ContactUs.html">ContactUs</a>
             <a href="Settings.html">Setinges</a>
             <a href="Registration.html">Registration</a>
+            <a href="About.html">AboutUs</a>
             <a href="log.html">Login</a>   
         </nav>
     </header>
@@ -37,7 +40,7 @@
                     <label for="pro-name"><span>*</span>Profile Name  :</label>
                 </div>
                 <div class="inp">
-                    <input type="text" name="pro-name" id="pro-name" required maxlength="30" placeholder="Profile Name" size="50">
+                    <input type="text" name="pro-name" id="pro-name"  maxlength="30" placeholder="Profile Name" size="50">
                 </div>
             </div>
             <div class = "cont">
@@ -61,19 +64,19 @@
                     <label for="pro-name">LinkedIn URL</label>
                 </div>
                 <div class="inp">
-                    <input type="url" name="pro-name" id="pro-name" required maxlength="30" placeholder="Add your LinkedIn URL" size="50">
+                    <input type="url" name="pro-name" id="pro-name"  maxlength="30" placeholder="Add your LinkedIn URL" size="50">
                 </div>
                 <div class = "lab">
                     <label for="pro-name">Youtube URL</label>
                 </div>
                 <div class="inp">
-                    <input type="url" name="pro-name" id="pro-name" required maxlength="30" placeholder="Add your Youtube URL" size="50">
+                    <input type="url" name="pro-name" id="pro-name" maxlength="30" placeholder="Add your Youtube URL" size="50">
                 </div>
                 <div class = "lab">
                     <label for="pro-name">Github URL</label>
                 </div>
                 <div class="inp">
-                    <input type="url" name="pro-name" id="pro-name" required maxlength="30" placeholder="Add your Github URL" size="50">
+                    <input type="url" name="pro-name" id="pro-name"  maxlength="30" placeholder="Add your Github URL" size="50">
                 </div>
             </div>
             <input class = "com-but" type = "submit" value = "Commit">
@@ -90,19 +93,19 @@
                         <label for="pro-name"><span>*</span>Field Name  :</label>
                     </div>
                     <div class="inp">
-                        <input type="text" name="pro-name" id="pro-name" required maxlength="30" placeholder="Profile Name" size="50">
+                        <input required type="text" name="pro-name" id="pro-name"  maxlength="30" placeholder="Profile Name" size="50">
                     </div>
-                    <button class = "add-cer">
+                    <button class = "add-cer" onclick="cer()">
                         Add Certificate <i class="fa-solid fa-square-plus"></i>
                     </button>
-                    <div class = "ncer">
-                        <div class="inp-file">
-                            <input class = "cv-file" type="file" name="CV-file" id="CV-file" required maxlength="30" placeholder="Profile Name" size="50">
+                    <div id = "ncer" class = "ncer">
+                        <div id = "inp-file" class="inp-file">
+                            <!-- <input class = "cer-img" type="file" name="cer-img" id="cer-img"  maxlength="30"> -->
                         </div>
-                        <label for="">Title :</label>
-                        <input type="text" name="" id="" maxlength="200">
-                        <label for="">Description</label>
-                        <textarea name="" id="" cols="30" rows="5"></textarea>
+                            <!-- <label for="">Title :</label>
+                            <input type="text" name="" id="" maxlength="200">
+                            <label for="">Description</label>
+                            <textarea name="" id="" cols="30" rows="5"></textarea> -->
                     </div>
                 </div>  
                 <input class = "com-but" type = "submit" value = "Commit">
@@ -121,7 +124,7 @@
                 </div>
 
                 <div class="inp">
-                    <input type="text" name="pro-name" id="pro-name" required maxlength="30" placeholder="Profile Name" size="50">
+                    <input type="text" name="pro-name" id="pro-name"  maxlength="30" placeholder="Profile Name" size="50">
                 </div>
     
                 <button class = "add-cer">
@@ -135,7 +138,7 @@
                     <label for="">Image</label>
                     <div class = "cont img">
                         <div class="inp-file">
-                            <input title = "pleas select image"  class = "img-pro" type="file" name="img1" id="img1" required placeholder="img2" size="50">
+                            <input title = "pleas select image"  class = "img-pro" type="file" name="img1" id="img1"  placeholder="img2" size="50">
                         </div>
                         <div class="inp-file">
                             <input title = "pleas select image" class = "img-pro" type="file" name="img2" id="img2"  placeholder="img2">
@@ -176,9 +179,43 @@
             <div class="footer-social">
                 <a id ="linkedin" href="https://linkedin.com/in/islam-mustafa-755a49235" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 <a id ="youtube" href="https://www.youtube.com/@islammustafa9245" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                <a id ="github" href="#"><i class="fa-brands fa-github"></i></a>
+                <a class ="github" href="https://github.com/islamm88" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
     </footer>
 </body>
+
+<script>
+    function cer() {
+        
+            // Get the container for the label
+            const cerconncer = document.getElementById("ncer");
+            const label1 = document.createElement('label');
+            label1.setAttribute('for', 'cer-img');
+            label1.textContent = "Add certificate:";
+            cerconncer.appendChild(label1);
+
+            // Get the container for the input
+            const cerconinp = document.getElementById("inp-file");
+            const input1 = document.createElement('input');
+            input1.setAttribute('type', 'file');
+            input1.setAttribute('class', 'cer-img');
+            input1.setAttribute('name', 'cer-img');
+            cerconinp.appendChild(input1);
+
+            // Optional: Add spacing between label and input
+            const lineBreak = document.createElement('br');
+            cerconncer.appendChild(lineBreak);
+
+             // Get the container for the input
+            const cerconinp2 = document.getElementById("inp-file");
+            const input2 = document.createElement('input');
+            input2.setAttribute('type', 'test');
+            input2.setAttribute('class', 'cer-img');
+            input2.setAttribute('name', 'cer-img');
+            cerconinp.appendChild(input2);
+
+        
+    }
+</script>
 </html>

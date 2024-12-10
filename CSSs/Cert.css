@@ -70,6 +70,14 @@ main
                     cursor: pointer;
                 }
 
+                & .open ,
+                & .download
+                {
+                    font-size: 0.8em;
+                }
+
+               
+
             }
 
         & .card:hover
